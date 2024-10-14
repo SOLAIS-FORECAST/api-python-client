@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+name = "calibsun_api_client"
+
+[project]
+name = "calibsun_api_client"
+version = "0.0.1"
+dynamic = ["dependencies"]
+
+[tool.setuptools.packages.find]
+include = ["calibsun-api-client*"]
+exclude = ["app*", "tests*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements-calibsun-api-client.txt"]}
+

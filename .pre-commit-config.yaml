@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        name: black
+        entry: black
+        exclude: ^(develop|feature/.*)$
+        files: \.py$
+        args: [ "--line-length", "119", "." ]
+        language_version: python3.10
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v1.2.3
+    hooks:
+      - id: flake8
+        name: flake8
+        exclude: ^(develop|feature/.*)$
+        files: \.py$
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        name: isort
+        exclude: ^(develop|feature/.*)$
+        files: \.py$
