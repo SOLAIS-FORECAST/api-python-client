@@ -1,5 +1,5 @@
-from dataclasses import dataclass
 import time
+from dataclasses import dataclass
 
 
 @dataclass
@@ -8,6 +8,6 @@ class Token:
     token_type: str
     expires_in: int
     created_at: float = time.time()
-    
+
     def is_expired(self):
         return time.time() > self.created_at + self.expires_in

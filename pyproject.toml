@@ -1,14 +1,29 @@
+[project]
+name = "calibsunapi"
+version = "0.0.1"
+authors = [
+  { name="Ruben Partouche", email="rpartouche@calibsun.com" },
+]
+description = "Lightweight client to interact with Calibsun's API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [metadata]
-name = "calibsun_api_client"
-
-[project]
-name = "calibsun_api_client"
-version = "0.0.1"
-dynamic = ["dependencies"]
+name = "calibsunapi"
 
 [tool.setuptools.packages.find]
 include = ["calibsun-api-client*"]
