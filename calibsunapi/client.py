@@ -1,3 +1,4 @@
+"""Main module for the Calibsun API client."""
 import json
 import logging
 import os
@@ -17,9 +18,26 @@ from calibsunapi.utils import format_time
 
 
 class CalibsunApiClient:
+    """Main class for the Calibsun API client."""
+
     _token: Union[Token, None] = None
 
     def __init__(self, calibsun_client_id: Union[str, None] = None, calibsun_client_secret: Union[str, None] = None):
+        """
+        Initializes the client with the provided client ID and client secret.
+        If the client ID and client secret are not provided, the method attempts to
+        retrieve them from the environment variables 'CALIBSUN_CLIENT_ID' and
+        'CALIBSUN_CLIENT_SECRET', respectively. If neither is found, a warning is logged.
+        Args:
+            calibsun_client_id (Union[str, None], optional): The client ID for Calibsun.
+                Defaults to None.
+            calibsun_client_secret (Union[str, None], optional): The client secret for
+                Calibsun. Defaults to None.
+        Attributes:
+            calibsun_client_id (str or None): The client ID for Calibsun.
+            calibsun_client_secret (str or None): The client secret for Calibsun.
+        """
+
         self.calibsun_client_id = os.getenv("CALIBSUN_CLIENT_ID", calibsun_client_id)
         self.calibsun_client_secret = os.getenv("CALIBSUN_CLIENT_SECRET", calibsun_client_secret)
         if self.calibsun_client_id is None:

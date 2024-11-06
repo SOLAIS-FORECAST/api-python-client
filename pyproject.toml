@@ -1,8 +1,8 @@
 [project]
 name = "calibsunapi"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
-  { name="Ruben Partouche", email="rpartouche@calibsun.com" },
+  { name="Calibsun", email="rpartouche@calibsun.com" },
 ]
 description = "Lightweight client to interact with Calibsun's API"
 readme = "README.md"
