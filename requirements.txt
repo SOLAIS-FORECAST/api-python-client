@@ -13,7 +13,9 @@ packaging==24.1
 pip==24.2
 port-for==0.7.4
 psycopg==3.2.3
-Pygments==2.18.0
+Pygments==2.18.0$
+pytest
+pytest-cov
 pytest-postgresql==6.1.1
 requests==2.32.3
 setuptools==75.1.0

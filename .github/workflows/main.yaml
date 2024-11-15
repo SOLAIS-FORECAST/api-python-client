@@ -11,23 +11,12 @@ jobs:
     with:
       env: ${{ needs.setup-env.outputs.env }}
       aws_account: ${{ needs.setup-env.outputs.aws_account }}
-      image_name: convertgfs
-  deploy :
-    uses : SOLAIS-FORECAST/devops-workflows/.github/workflows/deploy.ecstask.yaml@main
-    needs : [build-test, setup-env]
+      image_name: api-python-client
+      deliver_docker_image: false
+  release:
+    if: github.ref == 'refs/heads/main'
+    uses : SOLAIS-FORECAST/devops-workflows/.github/workflows/public-release.yaml@main
+    needs : build-test
     with:
-      image_name : convertgfs
-      task_name: convert-gfs-task
-      version: ${{ needs.build-test.outputs.version }}
       env: ${{ needs.setup-env.outputs.env }}
-      aws_account: ${{ needs.setup-env.outputs.aws_account }}
-  deploy-lambda :
-    uses : SOLAIS-FORECAST/devops-workflows/.github/workflows/deploy.lambda-image.yaml@main
-    needs : [build-test, setup-env]
-    with:
-      image_name : convertgfs
-      lambda_name: convert-nwp
-      version: ${{ needs.build-test.outputs.version }}
-      env: ${{ needs.setup-env.outputs.env }}
-      aws_account: ${{ needs.setup-env.outputs.aws_account }}
     
