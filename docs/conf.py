@@ -26,7 +26,7 @@ project = project_info.get("name", "calibsunapi")
 author = project_info.get("authors")[0]["name"]
 release = project_info.get("version", "0.0.1")
 copyright = "2024, Calibsun"
-html_favicon = "favicon.ico"
+html_favicon = "favicon-32x32.png"
 
 
 # -- General configuration ---------------------------------------------------
