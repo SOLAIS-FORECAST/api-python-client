@@ -18,5 +18,5 @@ jobs:
     needs : [build-test, setup-env]
     with:
       env: ${{ needs.setup-env.outputs.env }}
-      version: ${{ needs.setup-env.outputs.version }}
+      version: ${{ needs.build-test.outputs.version }}
     
