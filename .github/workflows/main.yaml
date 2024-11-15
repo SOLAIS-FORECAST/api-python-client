@@ -15,7 +15,7 @@ jobs:
       deliver_docker_image: false
   release:
     uses : SOLAIS-FORECAST/devops-workflows/.github/workflows/public-release.yaml@main
-    needs : build-test
+    needs : [build-test, setup-env]
     with:
       env: ${{ needs.setup-env.outputs.env }}
     
