@@ -84,7 +84,7 @@ class CalibsunApiClient:
     def _get_upload_parameters(
         self, site_id: str, format: UploadMeasurementsFormats
     ) -> UploadLinkMeasurementsResponse:
-        response = self._get(EndpointRoutes.UPLOAD.format(site_id=site_id, format=format.value))
+        response = self._get(EndpointRoutes.UPLOAD.format(site_id=site_id, format=format))
         response.raise_for_status()
         return UploadLinkMeasurementsResponse(**response.json())
 
