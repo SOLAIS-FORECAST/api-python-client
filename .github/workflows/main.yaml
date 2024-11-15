@@ -16,6 +16,7 @@ jobs:
   release:
     uses : SOLAIS-FORECAST/devops-workflows/.github/workflows/public-release.yaml@main
     needs : [build-test, setup-env]
+    secrets: inherit
     with:
       env: ${{ needs.setup-env.outputs.env }}
       version: ${{ needs.build-test.outputs.version }}
