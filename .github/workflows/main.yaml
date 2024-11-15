@@ -14,7 +14,6 @@ jobs:
       image_name: api-python-client
       deliver_docker_image: false
   release:
-    if: github.ref == 'refs/heads/main'
     uses : SOLAIS-FORECAST/devops-workflows/.github/workflows/public-release.yaml@main
     needs : build-test
     with:
