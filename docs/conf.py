@@ -26,6 +26,8 @@ project = project_info.get("name", "calibsunapi")
 author = project_info.get("authors")[0]["name"]
 release = project_info.get("version", "0.0.1")
 copyright = "2024, Calibsun"
+html_favicon = "favicon.ico"
+
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

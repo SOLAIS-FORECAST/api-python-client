@@ -13,38 +13,38 @@ Calibsunapi is available from the Python Package Index (PyPI) and can be install
     $ pip install calibsunapi
 
 
-Conda installation
-----------------
+.. Conda installation
+.. ----------------
 
-Calibsunapi can be installed into a conda environment by installing the package from the conda-forge channel. If you do not already have access to a conda installation, we recommend installing miniconda for the smallest and easiest installation.
+.. Calibsunapi can be installed into a conda environment by installing the package from the conda-forge channel. If you do not already have access to a conda installation, we recommend installing miniconda for the smallest and easiest installation.
 
-The commands below will use -c conda-forge to make sure packages are downloaded from the conda-forge channel. Alternatively, you can tell conda to always use conda-forge by running:
-
-
-.. code-block:: console
-
-    $ conda config --add channels conda-forge
+.. The commands below will use -c conda-forge to make sure packages are downloaded from the conda-forge channel. Alternatively, you can tell conda to always use conda-forge by running:
 
 
-From a new environment
-^^^^^^^^^^^^^^^^^^^^^^
+.. .. code-block:: console
 
-We recommend creating a separate environment for your work with Satpy. To create a new environment and install Satpy all in one command you can run:
-
-.. code-block:: console
-
-    $ conda create-c conda-forge -n calibsunapi calibsunapi
-
-You must then activate the environment so any future python or conda commands will use this environment.
-
-.. code-block:: console
-
-    $ conda activate calibsunapi
+..     $ conda config --add channels conda-forge
 
 
-In an existing environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. From a new environment
+.. ^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: console
+.. We recommend creating a separate environment for your work with Satpy. To create a new environment and install Satpy all in one command you can run:
 
-    $ conda install -c conda-forge calibsunapi
+.. .. code-block:: console
+
+..     $ conda create-c conda-forge -n calibsunapi calibsunapi
+
+.. You must then activate the environment so any future python or conda commands will use this environment.
+
+.. .. code-block:: console
+
+..     $ conda activate calibsunapi
+
+
+.. In an existing environment
+.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. .. code-block:: console
+
+..     $ conda install -c conda-forge calibsunapi
