@@ -15,8 +15,9 @@ classifiers = [
 dynamic = ["dependencies"]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/SOLAIS-FORECAST/api-python-client"
+Issues = "https://github.com/SOLAIS-FORECAST/api-python-client/issues"
+Documentation = "https://solais-forecast.github.io/api-python-client/"
 
 [build-system]
 requires = ["setuptools"]

@@ -10,4 +10,4 @@ It is designed to be simple, efficient, and easy to use, and provides different 
 Having troubles installing or using Calibsunapi ? Feel free to ask questions at any of the contact methods or file an issue on [Calibsunapi's GitHub page](https://github.com/SOLAIS-FORECAST/api-python-client).
 
 
-Documentation : https://github.com/SOLAIS-FORECAST/api-python-client
+Documentation : https://solais-forecast.github.io/api-python-client/
