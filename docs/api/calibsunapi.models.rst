@@ -12,6 +12,14 @@ calibsunapi.models.listplants module
    :undoc-members:
    :show-inheritance:
 
+calibsunapi.models.targets module
+---------------------------------
+
+.. automodule:: calibsunapi.models.targets
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 calibsunapi.models.uploadmeasurements module
 --------------------------------------------
 

@@ -27,6 +27,7 @@ author = project_info.get("authors")[0]["name"]
 release = project_info.get("version", "0.0.1")
 copyright = "2024, Calibsun"
 html_favicon = "favicon-32x32.png"
+html_logo = "calibsun-logo.png"
 
 
 # -- General configuration ---------------------------------------------------
@@ -49,3 +50,6 @@ exclude_patterns = []
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
+html_css_files = [
+    "css/custom.css",
+]

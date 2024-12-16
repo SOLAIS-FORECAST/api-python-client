@@ -1,6 +1,14 @@
 calibsunapi package
 ===================
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   calibsunapi.models
+
 Submodules
 ----------
 

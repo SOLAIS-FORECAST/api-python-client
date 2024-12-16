@@ -1,0 +1,9 @@
+.wy-side-nav-search, .wy-nav-top {
+    background: #1B165D;
+}
+
+.wy-nav-side {
+    background: #130F39;
+}
+
+.toctree-l1 :hover, .current
