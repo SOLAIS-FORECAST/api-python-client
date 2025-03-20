@@ -86,7 +86,7 @@ Full example, iterating over all your plants and getting the latest forecast :
 
 .. code-block:: python
 
-    from calibsunapi import CalibsunApiClient
+    from calibsunapi import CalibsunApiClient, Targets
 
     client = CalibsunApiClient(calibsun_client_id="your_client_id", calibsun_client_secret="your_client_secret")
 
