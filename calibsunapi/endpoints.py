@@ -1,7 +1,7 @@
 import os
 
 BASE = "https://api.calibsun.com"
-API = "/api"
+API = "/api/v2"
 OPEN = "/open"
 PUBLIC = "/public"
 
