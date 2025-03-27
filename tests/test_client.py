@@ -31,10 +31,9 @@ def test_authenticate_no_credentials(mock_post):
 
 
 @patch("calibsunapi.client.requests.get")
-def test_list_plants(mock_get, authentified_client: CalibsunApiClient, plant):
+def test_list_plants(mock_get, authentified_client: CalibsunApiClient, plant: dict):
     mock_response = MagicMock()
-    site_id = plant.pop("site_id")
-    mock_response.json.return_value = {site_id: plant}
+    mock_response.json.return_value = [plant]
     mock_response.raise_for_status = MagicMock()
     mock_get.return_value = mock_response
 
@@ -42,7 +41,7 @@ def test_list_plants(mock_get, authentified_client: CalibsunApiClient, plant):
 
     assert len(plants) == 1
     assert isinstance(plants[0], Plant)
-    assert plants[0].site_id == site_id
+    assert plants[0].site_id == plant.get("site_configuration").get("site_characteristics").get("site_id")
 
 
 @patch("calibsunapi.client.requests.post")
