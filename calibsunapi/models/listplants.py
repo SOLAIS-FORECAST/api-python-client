@@ -9,30 +9,27 @@ if TYPE_CHECKING:
 class Plant:
     site_id: str
     name: str
-    latitude: str
-    longitude: str
-    elevation: str
-    peakpower: str
-    tilt: str
-    azimut: str
-    tilt_gti: str
-    azimut_gti: str
-    rendement_stc: str
-    coefficient_temperature: str
-    DC_AC: str
-    tracker: str
-    backtracking: str
-    maxangle: str
-    entraxe: str
-    L_panel: str
-    gti: str
-    ghi: str
-    resolution: str
-    frequency: str
-    production: str
-    horizon: str
-    subscription_type: str
-    activated: str
+    latitude: float
+    longitude: float
+    elevation: float
+    peakpower: float
+    tracker: bool
+    tilt: float
+    azimut: float
+    tilt_gti: Optional[float]
+    azimut_gti: Optional[float]
+    rendement_stc: float
+    coefficient_temperature: float
+    dc_ac: float
+    backtracking: bool
+    maxangle: float
+    entraxe: float
+    panel_length: float
+    coefficient_irradiance: float
+    coefficient_log_irradiance: float
+    u_tamb_to_tcell: float
+    fit_pv_model: bool
+    performance_ratio: float
 
     client: Optional["CalibsunApiClient"] = None
 

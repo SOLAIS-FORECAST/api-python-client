@@ -103,7 +103,13 @@ class CalibsunApiClient:
         """
         response = self._get(EndpointRoutes.LISTPLANT)
         response.raise_for_status()
-        return [Plant(site_id=plant, **config, client=self) for plant, config in response.json().items()]
+        return [
+            Plant(
+                **plant.get("site_configuration").get("site_characteristics"),
+                client=self,
+            )
+            for plant in response.json()
+        ]
 
     @requires_authentication
     def push_measurements(
