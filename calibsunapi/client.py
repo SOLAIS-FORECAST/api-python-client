@@ -105,6 +105,7 @@ class CalibsunApiClient:
         response.raise_for_status()
         return [
             Plant(
+                site_id=plant.get("site_id"),
                 **plant.get("site_configuration").get("site_characteristics"),
                 client=self,
             )

@@ -28,8 +28,6 @@ class Plant:
     coefficient_irradiance: float
     coefficient_log_irradiance: float
     u_tamb_to_tcell: float
-    fit_pv_model: bool
-    performance_ratio: float
 
     client: Optional["CalibsunApiClient"] = None
 

@@ -1,29 +1,45 @@
-{
-    "site_configuration": {
-        "site_characteristics": {
-            "site_id": "signes",
-            "name": "Signes",
-            "latitude": 43.25551,
-            "longitude": 5.8,
-            "elevation": 441.0,
-            "peakpower": 729.6,
-            "tracker": false,
-            "tilt": 10.0,
-            "azimut": 197.0,
-            "tilt_gti": null,
-            "azimut_gti": null,
-            "rendement_stc": 0.185,
-            "coefficient_temperature": 0.0038,
-            "dc_ac": 1.0,
-            "backtracking": false,
-            "maxangle": 55.0,
-            "entraxe": 5.0,
-            "panel_length": 2.0,
-            "coefficient_irradiance": 0.07,
-            "coefficient_log_irradiance": 0.0,
-            "u_tamb_to_tcell": 23.02,
-            "fit_pv_model": true,
-            "performance_ratio": 0.77
+    {
+        "site_id": "signes",
+        "subscription_type": "demo",
+        "subscription_start_date": "2025-03-27T07: 45: 11.194235",
+        "subscription_end_date": null,
+        "site_configuration": {
+            "site_activated": true,
+            "site_aggregation": false,
+            "site_measurements": true,
+            "site_demo": true,
+            "site_characteristics": {
+                "name": "Signes",
+                "latitude": 43.25551,
+                "longitude": 5.8,
+                "elevation": 441.0,
+                "peakpower": 729.6,
+                "tracker": false,
+                "tilt": 10.0,
+                "azimut": 197.0,
+                "tilt_gti": null,
+                "azimut_gti": null,
+                "rendement_stc": 0.185,
+                "coefficient_temperature": 0.0038,
+                "dc_ac": 1.0,
+                "backtracking": false,
+                "maxangle": 55.0,
+                "entraxe": 5.0,
+                "panel_length": 2.0,
+                "coefficient_irradiance": 0.07,
+                "coefficient_log_irradiance": 0.0,
+                "u_tamb_to_tcell": 23.02
+            },
+            "output": {
+                "resolution": 5,
+                "frequency": 5,
+                "horizon": 48,
+                "gti": true,
+                "ghi": true,
+                "dhi": false,
+                "dni": false,
+                "prod": true
+            },
+            "aggregated_sites": null
         }
     }
-}
