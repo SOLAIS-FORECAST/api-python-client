@@ -41,7 +41,7 @@ def test_list_plants(mock_get, authentified_client: CalibsunApiClient, plant: di
 
     assert len(plants) == 1
     assert isinstance(plants[0], Plant)
-    assert plants[0].site_id == plant.get("site_configuration").get("site_characteristics").get("site_id")
+    assert plants[0].site_id == plant.get("site_id")
 
 
 @patch("calibsunapi.client.requests.post")
